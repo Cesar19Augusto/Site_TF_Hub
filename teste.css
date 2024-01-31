@@ -117,3 +117,27 @@ main {
     height: 60vh;
     
 }
+
+
+
+
+  /* Estilo para o botão */
+  #voltar-ao-topo {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fixa no canto inferior direito */
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Garante que fique acima de outros elementos */
+    font-size: 18px;
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none;
+    border-radius: 50%; /* Formato circular */
+    padding: 10px; /* Espaçamento interno */
+    cursor: pointer;
+  }
+
+  /* Estilo de hover */
+  #voltar-ao-topo:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  }

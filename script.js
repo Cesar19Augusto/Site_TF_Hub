@@ -1,4 +1,4 @@
-// script.js
+// INICIO Pesquisa 
 document.addEventListener("DOMContentLoaded", function() {
     const searchForm = document.getElementById("search-form");
     searchForm.addEventListener("submit", function(event) {
@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+// FIM Pesquisa 
 
-
-
+//inicio imagens TF
 var imagens = [
     "./imagens_jpeg/TF_BAGEACADEMY.jpeg",
     "./imagens_jpeg/TF_ERP.jpeg",
@@ -38,3 +38,23 @@ var intervaloID = setInterval(trocarImagemAutomaticamente, intervaloTroca);
 
 // Se você quiser parar a troca automática após um certo tempo, descomente a linha abaixo
 // setTimeout(function() { clearInterval(intervaloID); }, 15000); // Isso irá parar a troca automática após 15 segundos
+
+//FIM imagens TF
+
+//INICIO Script para mostrar/ocultar o botão conforme o scroll
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("voltar-ao-topo").style.display = "block";
+    } else {
+      document.getElementById("voltar-ao-topo").style.display = "none";
+    }
+  }
+  // Função para fazer a rolagem suave
+  document.getElementById("voltar-ao-topo").addEventListener("click", function() {
+    document.body.scrollTop = 0; // Para navegadores Safari
+    document.documentElement.scrollTop = 0; // Para outros navegadores
+  });
+
+//FIM Script para mostrar/ocultar o botão conforme o scroll
