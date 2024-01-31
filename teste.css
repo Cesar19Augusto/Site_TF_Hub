@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
-
-body{
-    /* background-color: blue; */
- }
-
+#img_logo{
+    width: 216px;
+    height: 60.41px; 
+}
 .menu {
     position: fixed;
     height: auto;
@@ -55,7 +55,6 @@ a,p { /*Site completo*/
 }
 
 .container-fluid {
-    background-image: url(./imagens_jpeg/WhatsApp-Image-2023-11-21-at-13.07.41.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -78,10 +77,10 @@ main {
 
 .cards-list {
     display: flex;
-
     justify-content: center;
     flex-wrap: wrap;
     gap: 3.3rem;
+    text-align: center;
 }
 
 .card {
@@ -93,11 +92,28 @@ main {
     display: flex;
     align-items:center ;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
     border-radius: 10px;
     transition: 0.5s;
+}
+
+.card h2 {
+    margin-bottom: auto;
+    align-items: center;
+    padding-bottom: 10%;
 }
 
 .card:hover {
     transition: 0.5s;
     transform: scale(1.1);
+}
+
+.box_diz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    
 }

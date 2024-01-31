@@ -18,39 +18,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+
 var imagens = [
     "./imagens_jpeg/TF_BAGEACADEMY.jpeg",
     "./imagens_jpeg/TF_ERP.jpeg",
     "./imagens_png/TF_Shop.png"
-  ];
-  
-  var indiceAtual = 0;
-  var intervaloTroca = 7000; // Intervalo de troca em milissegundos (3 segundos)
-  
-  function trocarImagemAutomaticamente() {
-    document.getElementById("imagem").src = imagens[indiceAtual];
+];
+
+var indiceAtual = 0;
+var intervaloTroca = 9000; // Intervalo de troca em milissegundos (9 segundos)
+
+function trocarImagemAutomaticamente() {
+    document.getElementById("imagem").style.backgroundImage = "url('" + imagens[indiceAtual] + "')";
     indiceAtual = (indiceAtual + 1) % imagens.length; // Avança para a próxima imagem
-  }
-  
-  // Iniciar a troca automática de imagens
-  var intervaloID = setInterval(trocarImagemAutomaticamente, intervaloTroca);
-  
-  // Se você quiser parar a troca automática após um certo tempo, descomente a linha abaixo
-  // setTimeout(function() { clearInterval(intervaloID); }, 15000); // Isso irá parar a troca automática após 15 segundos
-  
-
-
-
-/*
-var imagem1 = "TF_BAGEACADEMY.jpeg"; 
-var imagem2 = "TF_ERP.jpeg";
-var imagem3 = "TF_Shop.png";
-
-function trocar (){
-    document.getElementById("imagem").src = imagem1;
-    let aux = imagem1;
-    imagem1 = imagem2;
-    imagem2 = aux;
 }
+// Iniciar a troca automática de imagens
+var intervaloID = setInterval(trocarImagemAutomaticamente, intervaloTroca);
 
-<button onclick="trocar()">Trocar imagem</button> */
+// Se você quiser parar a troca automática após um certo tempo, descomente a linha abaixo
+// setTimeout(function() { clearInterval(intervaloID); }, 15000); // Isso irá parar a troca automática após 15 segundos
