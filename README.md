@@ -4,5 +4,3 @@ Site referencia: https://www.tfhub.com.br/
 
 Devs:
 Cesar Augusto - Cesar19Augusto
-
-Gabriel -
