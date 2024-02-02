@@ -118,9 +118,6 @@ main {
     
 }
 
-
-
-
   /* Estilo para o botão */
   #voltar-ao-topo {
     display: none; /* Inicialmente oculto */
@@ -141,3 +138,70 @@ main {
   #voltar-ao-topo:hover {
     background-color: #0056b3; /* Cor de fundo ao passar o mouse */
   }
+
+
+
+
+/*INICIO Roda Pé*/
+  .container_pe {
+    display: inline-block; /* adiciona cada container_pe lado a lado */
+    vertical-align: top; /* alinha as divs ao topo */
+}
+
+  .box_info{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Para ocupar toda a largura da tela */
+    background-color: #000000;
+    padding: 100px; /* Adicione o preenchimento conforme necessário */
+    box-sizing: border-box; /* Garanta que o preenchimento esteja incluído no tamanho total */
+    text-align: center; /* Centralize o conteúdo */
+    background-color: #000000;
+    display: flex; /* Adiciona display flex */
+    justify-content: space-between; /* Alinha os itens ao início e ao fim */
+  }
+
+  .box_info p{
+    color: #ffffff;
+  }
+  #logo_rodape{
+    width: 136.4px;
+    height: 38.15px;
+  }
+  .container_pe {
+
+    border-top: 4px double #37485c;
+    border-bottom: 4px double #37485c;
+    overflow: hidden;
+    text-align: center; /* alinha o conteúdo ao centro */
+    padding: 80px; /* espaçamento interno */
+    width: 350px; /* largura da caixa */
+}
+
+.container_pe img {
+    display: block; /* para alinhar a imagem ao centro horizontalmente */
+    margin: 0 auto 10px; /* centraliza a imagem verticalmente e adiciona 10px de margem abaixo */
+}
+
+.container_pe p {
+    margin: 0; /* remove a margem padrão do parágrafo */
+}
+#social_media{
+    width: 136.4px;
+    height: 136.4px;
+}
+
+.bottom_text {    
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* move o texto para o centro horizontalmente */
+    transform: translateX(-50%); /* centraliza horizontalmente */
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+/*FIM Roda Pé*/
