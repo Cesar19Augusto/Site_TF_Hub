@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+/*INICIO MENU*/
 #img_logo{
     width: 216px;
     height: 60.41px; 
@@ -20,11 +22,11 @@
     align-items: center;
     border-radius: 5px;
 }
-a,p { /*Site completo*/
+a,p {
     color: #000000;
     text-decoration: none;
 }
-.menu-list {          /*config da lista de links*/
+.menu-list {         
     list-style-type: none;
     padding: 15px;
     margin: 0;
@@ -43,6 +45,17 @@ a,p { /*Site completo*/
     text-decoration: none;
 }
 
+.container-fluid {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*fim MENU*/
+
 .centered-iframe {
     text-align: center;
     height: 900px;
@@ -53,14 +66,6 @@ a,p { /*Site completo*/
     height: 100%;
 }
 
-.container-fluid {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .container {
     max-width: 1440px;
     width: 90%;
@@ -118,23 +123,23 @@ main {
 
   /* Estilo para o botão */
   #voltar-ao-topo {
-    display: none; /* Inicialmente oculto */
-    position: fixed; /* Fixa no canto inferior direito */
+    display: none;
+    position: fixed; 
     bottom: 20px;
     right: 20px;
-    z-index: 99; /* Garante que fique acima de outros elementos */
+    z-index: 99; 
     font-size: 18px;
-    background-color: #007bff; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 50%; /* Formato circular */
-    padding: 10px; /* Espaçamento interno */
+    border-radius: 50%;
+    padding: 10px;
     cursor: pointer;
   }
 
   /* Estilo de hover */
   #voltar-ao-topo:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    background-color: #0056b3;
   }
 
 
@@ -142,22 +147,22 @@ main {
 
 /*INICIO Roda Pé*/
   .container_pe {
-    display: inline-block; /* adiciona cada container_pe lado a lado */
-    vertical-align: top; /* alinha as divs ao topo */
+    display: inline-block;
+    vertical-align: top; 
 }
 
   .box_info{
     position: relative;
     bottom: 0;
     left: 0;
-    width: 100%; /* Para ocupar toda a largura da tela */
+    width: 100%; 
     background-color: #000000;
-    padding: 100px; /* Adicione o preenchimento conforme necessário */
-    box-sizing: border-box; /* Garanta que o preenchimento esteja incluído no tamanho total */
-    text-align: center; /* Centralize o conteúdo */
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center; 
     background-color: #000000;
-    display: flex; /* Adiciona display flex */
-    justify-content: space-between; /* Alinha os itens ao início e ao fim */
+    display: flex;
+    justify-content: space-between; 
   }
 
   .box_info p{
@@ -172,18 +177,18 @@ main {
     border-top: 4px double #37485c;
     border-bottom: 4px double #37485c;
     overflow: hidden;
-    text-align: center; /* alinha o conteúdo ao centro */
-    padding: 80px; /* espaçamento interno */
-    width: 350px; /* largura da caixa */
+    text-align: center; 
+    padding: 80px;
+    width: 350px; 
 }
 
 .container_pe img {
-    display: block; /* para alinhar a imagem ao centro horizontalmente */
-    margin: 0 auto 10px; /* centraliza a imagem verticalmente e adiciona 10px de margem abaixo */
+    display: block;
+    margin: 0 auto 10px; 
 }
 
 .container_pe p {
-    margin: 0; /* remove a margem padrão do parágrafo */
+    margin: 0; 
 }
 #social_media{
     width: 136.4px;
@@ -193,8 +198,8 @@ main {
 .bottom_text {    
     position: absolute;
     bottom: 0;
-    left: 50%; /* move o texto para o centro horizontalmente */
-    transform: translateX(-50%); /* centraliza horizontalmente */
+    left: 50%; 
+    transform: translateX(-50%); 
     text-align: center;
     width: 100%;
     background-color: #000000;
